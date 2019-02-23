@@ -1,6 +1,6 @@
 {
   "name": "carer",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "cares about you",
   "main": "index.js",
   "directories": {
@@ -14,11 +14,10 @@
     "sync": "npm run push ; npm publish",
     "bump": "npm-bump patch -b dev"
   },
-  "pre-push": [
-	],
-	"pre-commit": [
-		"bump"
-	],
+  "pre-push": [],
+  "pre-commit": [
+    "bump"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lopugit/declarer.git"
