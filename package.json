@@ -1,13 +1,13 @@
 {
   "name": "carer",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "description": "cares about you",
   "main": "index.js",
   "directories": {
     "example": "examples"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node tests/index.js",
     "commit": "git add . ; git commit -m 'did I do that?'",
     "push": "git push origin dev",
     "togit": "npm run commit ; npm run push",
