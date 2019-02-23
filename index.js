@@ -6,14 +6,20 @@ class CarerJSON {
   constructor(template, appContext, opts) {
     this.template = template
     this.appContext = appContext
-    this.serialize = serialize
-    this.deserialize = deserialize
+    Object.assign(this, {
+			serializer,
+			cares: serializer,
+			deserialize,
+			cared: deserialize
+		})
 
     if (opts && typeof opts.serialize === 'function')
       this.serialize = opts.serialize
-
+			this.cares = this.serialize
     if (opts && typeof opts.deserialize === 'function')
-      this.deserialize = opts.deserialize
+			this.deserialize = opts.deserialize
+			this.cared = this.deserialize
+
   }
 
   parse() {
@@ -169,6 +175,7 @@ function serialize() {
     throw new Error(err)
   }
 }
+let care = serialize
 
 function serializeReplacer(key, value) {
   if (typeof value === 'function'){
