@@ -12,11 +12,13 @@
     "push": "npm run commit ; git push origin dev",
     "pull": "git pull origin dev",
     "sync": "npm run push ; npm publish",
-    "prepublish": "npm-bump patch"
+    "bump": "npm-bump patch -b dev"
   },
   "pre-push": [
-    "prepublish"
-  ],
+	],
+	"pre-commit": [
+		"bump"
+	],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lopugit/declarer.git"
@@ -29,6 +31,7 @@
   "homepage": "https://github.com/lopugit/declarer#readme",
   "devDependencies": {
     "npm-bump": "0.0.25",
+    "pre-commit": "^1.2.2",
     "pre-push": "^0.1.1"
   }
 }
