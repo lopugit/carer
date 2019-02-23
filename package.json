@@ -1,6 +1,6 @@
 {
   "name": "carer",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "cares about you",
   "main": "index.js",
   "directories": {
@@ -29,6 +29,7 @@
   "devDependencies": {
     "npm-bump": "0.0.25",
     "pre-commit": "^1.2.2",
-    "pre-push": "^0.1.1"
+    "pre-push": "^0.1.1",
+    "rollup": "^1.2.2"
   }
 }
