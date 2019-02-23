@@ -1,6 +1,6 @@
 {
   "name": "carer",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "cares about you",
   "main": "index.js",
   "directories": {
