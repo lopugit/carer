@@ -2,7 +2,7 @@
 /* eslint-disable prefer-template */
 'use strict'
 
-class DeclarativeJSON {
+class CarerJSON {
   constructor(template, appContext, opts) {
     this.template = template
     this.appContext = appContext
@@ -171,8 +171,9 @@ function serialize() {
 }
 
 function serializeReplacer(key, value) {
-  if (typeof value === 'function')
+  if (typeof value === 'function'){
     return { type: 'Function', value: value.toString() }
+	}
 
   return value
 }
@@ -198,4 +199,4 @@ function deserializeReviver(key, value) {
 
 // If environment is not browser, export it (for node compatibility)
 if (typeof window === 'undefined')
-  module.exports = DeclarativeJSON
+  module.exports = CarerJSON

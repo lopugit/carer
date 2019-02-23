@@ -1,17 +1,17 @@
-# Declarative
-Declarative templating for Render frameworks such as HTML, React, React Native, Vue, etc
+# Carer
+Carer templating for Render frameworks such as HTML, React, React Native, Vue, etc
 
 <br>
 
 ## Setup: ##
 ### Node: ###
 ```
-const Decl = require('Declarative')
+const Decl = require('Carer')
 ```
 ### Browser: ###
 ```
-<script src='js/Declarative.js' />
-var Decl = Declarative
+<script src='js/Carer.js' />
+var Decl = Carer
 ```
 
 <br>
@@ -69,4 +69,4 @@ let output = decl.render()
 <br>
 
 ## License: ##
-[MIT](https://github.com/bugs181/DeclarativeJSON/blob/master/LICENSE)
+[MIT](https://github.com/bugs181/CarerJSON/blob/master/LICENSE)
