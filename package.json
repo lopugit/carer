@@ -16,7 +16,8 @@
     "bump": "npm version patch"
   },
   "pre-publish": [],
-  "pre-commit": [],
+  "pre-commit": [
+	],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lopugit/declarer.git"
