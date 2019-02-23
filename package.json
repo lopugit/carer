@@ -1,6 +1,6 @@
 {
   "name": "carer",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "cares about you",
   "main": "index.js",
   "directories": {
@@ -10,6 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "commit": "git add . ; git commit -m 'did I do that?'",
     "push": "git push origin dev",
+    "togit": "npm run commit ; npm run push",
     "pull": "git pull origin dev",
     "sync": "npm version patch --force && npm run push && npm publish"
   },
